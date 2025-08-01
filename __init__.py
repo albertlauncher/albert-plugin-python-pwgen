@@ -19,7 +19,7 @@ md_iid = '3.0'
 md_version = "0.0"
 md_name = "PW Gen"
 md_description = "Create random strong password"
-md_license = "GPL-3"
+md_license = "MIT"
 md_url = "https://github.com/LorenzoMorelli/pw-gen-albert-python-plugin"
 md_authors = ["@LorenzoMorelli"]
 
@@ -38,7 +38,7 @@ class Plugin(PluginInstance, TriggerQueryHandler):
         punctuation = "!@.,;?=+-_()*:&$"
         # prepare the alphabet
         alphabet = string.ascii_letters + string.digits + punctuation
-        
+
         # if lenght less then 6 we cannot include all the possible chars combination for a strong password
         if length < 6:
             # build the password randombly then
